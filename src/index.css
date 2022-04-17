@@ -86,3 +86,23 @@ code {
   background-color: rosybrown;
   background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
 }
+h1 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30vh;
+  letter-spacing: .5vw;
+  color: white;
+  background: url("img2.jpg");
+  background-size: auto 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 40s linear infinite;
+}
+@keyframes shine {
+  from {
+    background-position: center 0;
+  }
+  to {
+    background-position: center 200%;
+  }
+}

@@ -9,18 +9,28 @@ const txt = useRef(null);
 useEffect(()=>{
     const el = txt.current;
     gsap.from("#text",{
-    // gsap.from("#onMe",{
         duration:3,
         y:"100",
         opacity:0,
         ease:'ease-In',
-        ScrollTrigger:{
-        //  trigger: '#text',
-         trigger: '#onMe',
+        scrollTrigger:{
+         trigger: '#text',
+         // trigger: '#ok2',
          start:'top 90%',
          end:"bottom 60%",
-         marker:true,
-         toggleAction:'restart complete reverse reset',
+         toggleActions:'restart complete reverse reset',
+    }} )
+    gsap.from("#text2",{
+        duration:3,
+        y:"100",
+        opacity:0,
+        ease:'ease-In',
+        scrollTrigger:{
+         trigger: '#text2',
+         start:'top 90%',
+         end:"bottom 60%",
+         // markers:true,
+         toggleActions:'restart complete reverse reset',
     }} )
     // gsap.fromTo(el,{rotation:0},{rotation: 180,duration:3,ScrollTrigger:{
     //      trigger: el
@@ -31,16 +41,16 @@ useEffect(()=>{
   <>
   <div className="Home">
     <div className="container">
-       <h1 > hello1 </h1>
+       <h1 id="text"> Akhilesh </h1>
     </div>
-    <div className="container">
-       <h1  ref={txt}> hello2 </h1>
+    <div className="container" id='ok2'>
+       <h1  ref={txt}> Hello2 </h1>
     </div>
     <div className="container" id='onMe'>
-       <h1 id="text" > hello3 </h1>
+       <h1 id="text2" > Hello3 </h1>
     </div>
     <div className="container">
-       <h1> hello4 </h1>
+       <h1> Hello4 </h1>
     </div>
   </div>
   </>
