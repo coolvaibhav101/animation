@@ -65,8 +65,8 @@ code {
   justify-content: center;
   align-items: center;
   color: var(--color-white);
-  background-color: blueviolet;
-  font-size: 25rem;
+  background-image: linear-gradient( 102.4deg,  rgba(253,189,85,1) 7.8%, rgba(249,131,255,1) 100.3% );
+  /* font-size: 25rem; */
 }
 .Home .container:nth-child(1){
   background-color: green;
@@ -86,10 +86,29 @@ code {
   background-color: rosybrown;
   background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
 }
+.Home .container:nth-child(5){
+  background-color: rosybrown;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+.Home .container:nth-child(6){
+  background-color: rosybrown;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+.Home .container:nth-child(7){
+  background-color: rosybrown;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  background-color: #FAACA8;
+  background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+
+}
 h1 {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  font-size: 30vh;
+  font-size: 15vw;
   letter-spacing: .5vw;
   color: white;
   background: url("img2.jpg");
@@ -105,4 +124,66 @@ h1 {
   to {
     background-position: center 200%;
   }
+}
+
+.Home .outer{
+
+}
+.Home .outer .inner{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  box-shadow: 0 0 15px 2px  #00000029;
+  background-image: linear-gradient( 102.4deg,  rgba(253,189,85,1) 7.8%, rgba(249,131,255,1) 100.3% );
+  background-image: linear-gradient( 68.4deg,  rgba(99,251,215,1) -0.4%, rgba(5,222,250,1) 100.2% );
+  font-size: 25rem;
+}
+h2 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13vw;
+  letter-spacing: .3vw;
+  color: white;
+  background: url("imgs.jpg");
+  background-size: auto 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 40s linear infinite;
+}
+
+
+.Home .outer .div1{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  background-image: linear-gradient( 102.4deg,  rgba(253,189,85,1) 7.8%, rgba(249,131,255,1) 100.3% );
+  background-image: linear-gradient( 68.4deg,  rgba(99,251,215,1) -0.4%, rgba(5,222,250,1) 100.2% );
+  background-image: linear-gradient( 180.4deg,  rgba(188,120,236,1) -2.2%, rgba(29,133,163,1) 83.5% );
+  font-size: 25rem;
+}
+.Home .outer .div2{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  background-image: linear-gradient( 102.4deg,  rgba(253,189,85,1) 7.8%, rgba(249,131,255,1) 100.3% );
+  background-image: linear-gradient( 68.4deg,  rgba(99,251,215,1) -0.4%, rgba(5,222,250,1) 100.2% );
+  background-image: linear-gradient( 132.6deg,  rgba(71,139,214,1) 23.3%, rgba(37,216,211,1) 84.7% );
+  font-size: 25rem;
+}
+.Home .outer .div3{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  background-image: linear-gradient( 102.4deg,  rgba(253,189,85,1) 7.8%, rgba(249,131,255,1) 100.3% );
+  background-image: linear-gradient( 68.4deg,  rgba(99,251,215,1) -0.4%, rgba(5,222,250,1) 100.2% );
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% );
+  font-size: 25rem;
 }
