@@ -99,17 +99,17 @@ useEffect(()=>{
          snap:1/(section.length -1 ),
          // snap:1,
          id:"snap",
-         markers:true,
+         // markers:true,
          end: ()=>"+=" +
          // document.querySelector('.container').offsetHeight
          document.querySelector('.container').offsetWidth
       }
    })
-    // gsap.fromTo(el,{rotation:0},{rotation: 180,duration:3,ScrollTrigger:{
-    //      trigger: el
-    // }} )
+ 
 }, [])
-   
+
+
+
     return (
   <>
   <div className="Home">
@@ -122,9 +122,7 @@ useEffect(()=>{
     <div className="container" id='onMe'>
        <h1 className='text' id="text2" > Hello3 </h1>
     </div> */}
-    <div className="container" id='onMe'>
-       <h1 className='text' id="text2" > Hello3 </h1>
-    </div>
+    
     <div className="outer">
        <div className="inner div1">
          <h2> Hello Inner1 </h2>
@@ -138,6 +136,9 @@ useEffect(()=>{
     </div>
      <div className="container">
          <h1 className='text' >Hello</h1>
+    </div>
+    <div className="container" id='onMe'>
+       <h1 className='text' id="text2" > Hello3 </h1>
     </div>
     {/* <div className="container">
          <h1 className='text' >Hello</h1>
