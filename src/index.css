@@ -37,6 +37,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #464646;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 code {
@@ -46,6 +48,7 @@ code {
 
 .App .App-header{
   /* position: fixed; */
+  position: absolute;
   height: 60rem;
   width: 100%;
   text-align: center;
@@ -58,8 +61,26 @@ code {
   background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(16,16,16,1) 0%, rgba(44,44,44,1) 100.3% );
   color: var(--color-white);
   font-size: 24rem;
+  z-index: 50;
 }
-.Home .container{
+.App .App-header ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App .App-header li{
+list-style: none;
+}
+.App .App-header li a{
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 18rem;
+  margin: 0 15rem ;
+}
+.App .App-header li a:hover{
+  color: wheat;
+}
+  .Home .container{
   height: 100vh;
   display: flex;
   justify-content: center;

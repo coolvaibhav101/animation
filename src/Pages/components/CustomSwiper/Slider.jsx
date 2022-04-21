@@ -12,8 +12,12 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import './test.scss';
 import data from './data.json';
+import Transition from '../Transition/Transition';
+import gsap from 'gsap';
+
 import logo from './h3alogo.svg';
 const Slider = () => {
+    const contact = gsap.timeline();
 
     useEffect(() => {
 
@@ -44,12 +48,13 @@ const Slider = () => {
 			}
 	});
 	swiper.on('slideChange', function () {
-		console.log('slide changed');
+		// console.log('slide changed');
 	  });
     }, [])
     
   return (
 	<div className="swiperMainContainer">
+        <Transition timeline={contact} />
 	<div className="header">
 		<a className="menu-icon" href="#ok">
 			<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
