@@ -1,5 +1,6 @@
 :root{
   --color-black:#141414;
+	--beach-bg: #e7dfcf;
   --color-white:white;
   font-size: 1px;
 }
@@ -37,6 +38,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #464646;
+  background-color: var(--beach-bg);
   overflow-x: hidden;
   width: 100vw;
 }
@@ -51,15 +53,17 @@ code {
   position: absolute;
   height: 60rem;
   width: 100%;
+  /* width: 95%; */
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-black);
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+  /* background-color: var(--color-black); */
+  /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
   background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(19,19,19,1) 0%, rgba(127,96,96,1) 100.3% );
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(16,16,16,1) 0%, rgba(44,44,44,1) 100.3% );
-  color: var(--color-white);
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(16,16,16,1) 0%, rgba(44,44,44,1) 100.3% ); */
+	background-color: var(--beach-bg);
+  /* color: var(--color-white); */
   font-size: 24rem;
   z-index: 50;
 }

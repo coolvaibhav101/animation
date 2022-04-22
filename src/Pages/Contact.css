@@ -10,10 +10,11 @@
 .container-contact h1{
     font-family: 'Monument';
     color: white;
+    text-shadow: 0 0px 9px #0000002c;
     font-size: 100px;
     text-transform: uppercase;
-
 }
+
 .contact-image{
     position: absolute;
     top: 50%;

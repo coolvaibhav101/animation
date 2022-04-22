@@ -88,7 +88,10 @@ body {
 	flex-shrink: 0;
 	font-weight: 600;
 	font-size: 15px;
+	
 	border-bottom: 1px solid rgba(44, 45, 42, 0.25);
+	width: 98%;
+	background-color: var(--beach-bg);
 	position: sticky;
 	top: 0;
 	left: 0;
